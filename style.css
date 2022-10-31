@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menuLateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 12vw;
+    background-color: rgb(25, 136, 44);
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+#itensMenu {
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+#itensMenu li {
+    letter-spacing: 3px;
+    margin-top: 32px;
+    
+}
+
+logo {
+    background-color: #fff;
+    background: url("imgs/logoIfmg.png") no-repeat center center #fff;
+    background-size: cover;
+    height: 12%;
+    width: 50%;
+    margin-top: 20%;
+}
