@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +12,12 @@
     align-items: center;
     height: 100vh;
     width: 12vw;
-    background-color: rgb(25, 136, 44);
-    font-family: sans-serif;
+    background-color: #256B19;
+    font-family: 'Jockey One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
+    margin: 0;
 
 }
 
@@ -37,4 +42,30 @@ logo {
     height: 12%;
     width: 50%;
     margin-top: 20%;
+}
+
+#itensMenu a:hover {
+    background-color: #fff5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#itensMenu a {
+    width: 100%;
+}
+
+.conteudo {
+    justify-self: flex-end;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
