@@ -2,12 +2,12 @@
 
 # Desmistificando Ribeirão das Neves: reconstruindo narrativas para a cidade a partir da sua própria composição (site)
 
-Projeto em desenvlvimento no [Instituto Federal de Minas Gerais - Campus Ribeirão das Neves](https://ifmg.edu.br/ribeiraodasneves), em objetivo da disciplina de Projeto Integrador do Curso Técnico Integrado em Informática - 2° Ano.
+Projeto em desenvlvimento no [Instituto Federal de Minas Gerais - Campus Ribeirão das Neves](https://ifmg.edu.br/ribeiraodasneves), em conformidade com a disciplina de Projeto Integrador do Curso Técnico Integrado em Informática - 2° Ano.
 
 
 ## Objetivos
 
-- Busca-se reconstruir a perspectiva negativa sobre o município, valorizando sua história, cultura e desenvolvimento. 
+- Busca-se reconstruir a perspectiva positiva sobre o município, valorizando sua história, cultura e desenvolvimento. 
 
 - Hospedar neste site conteúdos relativos ao trabalho
 
@@ -26,7 +26,7 @@ Projeto em desenvlvimento no [Instituto Federal de Minas Gerais - Campus Ribeir�
 - Vander Vantuil Pinto da Rocha Júnior [@Fralesto](https://github.com/Fralesto)
 
 
-## Ferramentas utilizadas (até o momento)
+## Ferramentas utilizadas
 
 **Front-end:** JavaScrip, CSS, HTML
 
