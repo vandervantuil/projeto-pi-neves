@@ -55,7 +55,11 @@ logo {
 }
 
 .conteudo {
-    justify-self: flex-end;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 main {
@@ -68,4 +72,24 @@ h1 {
     font-family: 'Jockey One', sans-serif;
     font-style: normal;
     font-weight: 400;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+p { 
+    font-family: 'Jockey One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    width: 1000px;
+}
+
+.projetoVideo {
+    background-color: #000;
+    border: 30px solid #1D9000;
+    width: 600px;
+    height: 450px;
 }
