@@ -52,6 +52,8 @@ logo {
 
 #itensMenu a {
     width: 100%;
+    text-decoration: none;
+    color: #000;
 }
 
 .conteudo {
@@ -89,7 +91,11 @@ p {
 
 .projetoVideo {
     background-color: #000;
-    border: 30px solid #1D9000;
+    border: 20px solid #1D9000;
     width: 600px;
     height: 450px;
+}
+
+iframe:hover {
+    background: #ffffffee;
 }
