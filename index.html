@@ -2,36 +2,101 @@
 <html lang=pt-Br dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ribeirão das Neves</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./codes/autoSliderImage.js" defer></script>
   </head>
   <body>
-    <main>
-      <div class="menuLateral">
-        <logo></logo>
+    <header>
+
+      <nav class="menuLateral">
+        <logo>
+          <img src="./imgs/logo.svg" alt="">
+          Projeto Integrador - Desmistificando a imagem de Ribeirão das Neves
+        </logo>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
         <ul id="itensMenu">
-          <li><a>Quem somos</a></li>
-          <li><a>O projeto</a></li>
-          <li><a href="https://www.ifmg.edu.br/ribeiraodasneves">O IFMG</a></li>
+          <li><a href="">Quem somos</a></li>
+          <li><a href="">O projeto</a></li>
+          <li><a href="">O IFMG</a></li>
+
         </ul>
-      </div>
-
-      <div class="conteudo">
+      </nav>
+      
+    </header>
+    
+    <main class="conteudo">
+      
+      <div class="row1">
         <div class="titulo">
-          <h1>Projeto Integrador - Desmistificando a imagem de Ribeirão das Neves</h1>
-          <h2>Começando...</h2>
+          <h1>Parque Ecológico Municipal Milton A. Guimarães</h1>
 
         </div>
-
-        <p>
-          Esse projeto foi criado no Intituto Federal de Minas Gerais - Campus Ribeirão das Neves por oito estudantes do ensino médio em sua discplina de Desenvolvimento de Projeto. Muito além de preencher a matéria, é importante que ps resultados sejam de domínio público, um esforço conjunto para que possamos ser orgulhosos de dizer que somos nevenses!
-        </p>
-
-        <div class="projetoVideo">
-          <iframe height=100% width=100% src="https://www.youtube.com/embed/SJeBRW1QQMA" title="I built a JavaScript framework" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="slider">
+          <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--Fim Radio Buttons-->
+  
+            <!--Slide Items-->
+            <div class="slide first">
+              <img src="imgs/Placa_Parque.JPG" alt="">
+            </div>
+            <div class="slide">
+              <img src="imgs/Skates_Parque.JPG" alt="Skates">
+            </div>
+            <div class="slide">
+              <img src="imgs/Flor_Parque.JPG" alt="Flor">
+            </div>
+            <div class="slide">
+              <img src="imgs/Ginastica_Parque.JPG" alt="Ginastica">
+            </div>
+            <!--Fim Slide Items-->
+            
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--Fim Navigation auto-->
+            
+          </div>    
+          
+          <!--Manual Navigation-->
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!--Fim Manual Navigation-->
+          
+          <!--<img src="https://images.unsplash.com/photo-1668365187350-05c997d09eba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">-->
+          
         </div>
       </div>
-
+      <div class="row2">
+        
+      </div>
+      
+      <!-- 
+        <div class="projetoVideo">
+          
+        </div>
+      -->
+      
     </main>
+
   </body>
 </html>
