@@ -6,55 +6,79 @@
     box-sizing: border-box;
 }
 
-.menuLateral {
+nav.menuLateral {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
-    width: 12vw;
+    height: 12vh;
+    width: 100vw;
     background-color: #256B19;
     font-family: 'Jockey One', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    margin: 0;
+    font-size: 1.5rem;
+    color: #f8f8ff;
 
 }
 
-#itensMenu {
-    display: flex;
-    color: #000;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-}
-
-#itensMenu li {
-    letter-spacing: 3px;
-    margin-top: 32px;
-    
-}
-
-logo {
-    background-color: #fff;
-    background: url("imgs/logoIfmg.png") no-repeat center center #fff;
-    background-size: cover;
-    height: 12%;
-    width: 50%;
-    margin-top: 20%;
-}
-
-#itensMenu a:hover {
-    background-color: #fff5;
-    border-radius: 5px;
+div.mobile-menu {
+    display: none;
     cursor: pointer;
 }
 
-#itensMenu a {
-    width: 100%;
+div.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
 }
 
-.conteudo {
+ul#itensMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+}
+
+ul#itensMenu li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+nav.menuLateral img {
+    background-color: #fff;
+    background: url("imgs/logo.svg") no-repeat center center #fff;
+    background-size: cover;
+    /*height: 12%;
+    width: 50%;*/
+    height: 8vh;
+}
+
+nav.menuLateral logo {
+    letter-spacing: 0.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+ul#itensMenu a {
+    width: 100%;
+    text-decoration: none;
+    color: #f8f8ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul#itensMenu a:hover {
+    background-color: rgba(255, 255, 255, 0.125);
+    opacity: 0.7;
+}
+
+main.conteudo {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -64,8 +88,7 @@ logo {
 
 main {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
 }
 
 h1 {
@@ -89,7 +112,152 @@ p {
 
 .projetoVideo {
     background-color: #000;
-    border: 30px solid #1D9000;
+    border: 20px solid #1D9000;
     width: 600px;
     height: 450px;
+}
+
+div.slider {
+    margin: 0 auto;
+    width: 50vw;
+    overflow: hidden;
+}
+
+div.slides {
+    width: 400%;
+    display: flex;
+}
+
+div.slides input {
+    display: none;
+}
+div.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+div.slide img {
+    width: 50vw;
+}
+
+div.manual-navigation {
+    position: absolute;
+    width: 50vw;
+    margin-top: -2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+label.manual-btn {
+    border: 2px solid #fff;
+    padding: 0.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+label.manual-btn:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+label.manual-btn:hover {
+    background-color: #fff;
+}
+
+input#radio1:checked ~ .first {
+    margin-left: 0;
+}
+input#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+input#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+input#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+div.navigation-auto div{
+    border: 2px solid #a206ff;
+    padding: 0.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+div.navigation-auto{
+    position: absolute;
+    width: 50vw;
+    margin-top: 31.5vw;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+div.navigation-auto div:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+input#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+input#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+input#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+input#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+div.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+div.titulo h1 {
+    border-bottom: 5px solid #202021;
+    padding: auto;
+    padding-right: 10px;
+    text-align: center;
+}
+
+div.titulo {
+    border-right: 5px solid #202021;
+    height: 100%;
+}
+
+
+
+@media (max-width: 1620px) {
+    nav.menuLateral {
+        font-size: 1rem;
+    
+    }
+}
+
+@media (max-width: 999px) {
+    #itensMenu {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #256B19;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        transform: translateX(100%);
+    }
+    #itensMenu li {
+        margin-left: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
 }
