@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Jockey One', sans-serif;
 }
 
 nav.menuLateral {
@@ -19,6 +20,7 @@ nav.menuLateral {
     font-weight: 400;
     font-size: 1.5rem;
     color: #f8f8ff;
+    border-radius: 0.25rem;
 
 }
 
@@ -92,7 +94,6 @@ main {
 }
 
 h1 {
-    font-family: 'Jockey One', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -104,7 +105,6 @@ h1 {
 }
 
 p { 
-    font-family: 'Jockey One', sans-serif;
     font-style: normal;
     font-weight: 400;
     width: 1000px;
@@ -118,9 +118,12 @@ p {
 }
 
 div.slider {
-    margin: 0 auto;
+    margin: 0;
     width: 50vw;
     overflow: hidden;
+    border: 10px solid #1D9000;
+    border-radius: 5%;
+    background-color: #1D9000;
 }
 
 div.slides {
@@ -199,21 +202,10 @@ div.navigation-auto div:not(:last-child) {
     margin-right: 2.5rem;
 }
 
-input#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: #fff;
-}
-input#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: #fff;
-}
-input#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: #fff;
-}
-input#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: #fff;
-}
 
 div.row1 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
@@ -241,7 +233,7 @@ div.titulo {
 }
 
 @media (max-width: 999px) {
-    #itensMenu {
+    ul#itensMenu {
         position: absolute;
         top: 8vh;
         right: 0;
@@ -254,10 +246,46 @@ div.titulo {
         justify-content:space-around;
         transform: translateX(100%);
     }
-    #itensMenu li {
+    ul#itensMenu li {
         margin-left: 0;
     }
-    .mobile-menu {
+    div.mobile-menu {
         display: block;
     }
+}
+
+.active {
+    background-color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.descricao:hover .desc {
+    border-bottom: 1px solid #fff;
+}
+
+.descricao {
+    color: #f8f8ff;
+    background-color: #1D9000;
+    padding: 2rem;
+    border-radius: 5%;
+    width: 20vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descricao span {
+    font-size: 1.2rem;
+}
+
+.desc {
+    font-size: 2rem;
+    transition: 1ss;
 }
