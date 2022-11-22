@@ -22,7 +22,7 @@ Projeto em desenvlvimento no [Instituto Federal de Minas Gerais - Campus Ribeir�
 - Gabrielle Carolina Silva do Nascimento
 - Laís Cabral de Freitas Fernandes
 - Pedro Henrique de Medeiros
-- Rafael Henrique Silva [Rafaelhs2005](https://github.com/Rafaelhs2005)
+- Rafael Henrique Silva [@Rafaelhs2005](https://github.com/Rafaelhs2005)
 - Vander Vantuil Pinto da Rocha Júnior [@Fralesto](https://github.com/Fralesto)
 
 
