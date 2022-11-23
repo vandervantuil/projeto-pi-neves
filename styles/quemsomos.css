@@ -1,0 +1,11 @@
+.conteudo p{
+    font-size: 1.25rem;
+    padding-top: 50px;
+    border: 5px black;
+    padding-bottom: 20px;
+}
+
+#vergonha p{
+    padding-top: 200px;
+    padding-left: 20px;
+}
