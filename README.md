@@ -21,8 +21,8 @@ Projeto em desenvlvimento no [Instituto Federal de Minas Gerais - Campus Ribeir�
 - Evelyn Vitória Caetano Maestre [@izuky0820](https://github.com/izuky0820)
 - Gabrielle Carolina Silva do Nascimento
 - Laís Cabral de Freitas Fernandes
-- Pedro Henrique de Medeiros
-- Rafael Henrique Silva
+- Pedro Henrique de Medeiros [@P0l13dr0](https://github.com/P0l13dr0)
+- Rafael Henrique Silva [@Rafaelhs2005](https://github.com/Rafaelhs2005)
 - Vander Vantuil Pinto da Rocha Júnior [@Fralesto](https://github.com/Fralesto)
 
 
