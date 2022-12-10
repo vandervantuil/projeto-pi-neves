@@ -20,7 +20,6 @@ nav.menuLateral {
     font-weight: 400;
     font-size: 1.5rem;
     color: #f8f8ff;
-    border-radius: 0.25rem;
 
 }
 
@@ -50,7 +49,7 @@ ul#itensMenu li {
 
 nav.menuLateral img {
     background-color: #fff;
-    background: url("imgs/logo.svg") no-repeat center center #fff;
+    background: url("/imgs/logo.svg") no-repeat center center #fff;
     background-size: cover;
     /*height: 12%;
     width: 50%;*/
@@ -117,106 +116,7 @@ p {
     height: 450px;
 }
 
-div.slider {
-    margin: 0;
-    width: 50vw;
-    overflow: hidden;
-    border: 10px solid #1D9000;
-    border-radius: 5%;
-    background-color: #1D9000;
-}
-
-div.slides {
-    width: 400%;
-    display: flex;
-}
-
-div.slides input {
-    display: none;
-}
-div.slide {
-    width: 25%;
-    position: relative;
-    transition: 2s;
-}
-div.slide img {
-    width: 50vw;
-}
-
-div.manual-navigation {
-    position: absolute;
-    width: 50vw;
-    margin-top: -2.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-label.manual-btn {
-    border: 2px solid #fff;
-    padding: 0.25rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-label.manual-btn:not(:last-child) {
-    margin-right: 2.5rem;
-}
-
-label.manual-btn:hover {
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first1 {
-    margin-left: 0;
-}
-#radio2:checked ~ .first1 {
-    margin-left: -25%;
-}
-#radio3:checked ~ .first1 {
-    margin-left: -50%;
-}
-#radio4:checked ~ .first1 {
-    margin-left: -75%;
-}
-
-#radio2-1:checked ~ .first2 {
-    margin-left: 0;
-}
-#radio2-2:checked ~ .first2 {
-    margin-left: -25%;
-}
-#radio2-3:checked ~ .first2 {
-    margin-left: -50%;
-}
-#radio2-4:checked ~ .first2 {
-    margin-left: -75%;
-}
-
-div.navigation-auto div{
-    border: 2px solid #a206ff;
-    padding: 0.25rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-div.navigation-auto{
-    position: absolute;
-    width: 50vw;
-    margin-top: 31.5vw;
-    display: flex;
-    justify-content: center;
-
-
-}
-
-div.navigation-auto div:not(:last-child) {
-    margin-right: 2.5rem;
-}
-
-
-div.row1 {
+div.row1, div.row2, div.row3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -237,41 +137,6 @@ div.titulo h1 {
 div.titulo {
     border-right: 5px solid #202021;
     height: 100%;
-}
-
-
-
-@media (max-width: 1620px) {
-    nav.menuLateral {
-        font-size: 1rem;
-    
-    }
-}
-
-@media (max-width: 999px) {
-    ul#itensMenu {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: #256B19;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:space-around;
-        transform: translateX(100%);
-    }
-    ul#itensMenu li {
-        margin-left: 0;
-    }
-    div.mobile-menu {
-        display: block;
-    }
-}
-
-.active, .active-2 {
-    background-color: #fff;
 }
 
 section {
@@ -305,13 +170,72 @@ section {
     transition: 1s;
 }
 
-div.row2 {
+
+footer {
+    color: #f8f8ff;
+    height: 250px;
+    background-color: #1d9000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 6rem;
-    padding-bottom: 100px;
-    border-bottom: 10px solid #1D9000;
+    margin-top: 20vh;
+}
+
+footer ul {
+    gap: 10px;
+    list-style: none;
+}
+
+footer span {
+    text-align: left;
+}
+main {
+    padding-bottom : 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+footer ul {
+    font-size: 0.75rem;
+    
+}
+
+footer h1 {
+    border-bottom: 3px solid #fff;
+}
+
+@media (max-width: 1620px) {
+    nav.menuLateral {
+        font-size: 1rem;
+    
+    }
+}
+
+@media (max-width: 999px) {
+    ul#itensMenu {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #256B19;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        transform: translateX(100%);
+    }
+    ul#itensMenu li {
+        margin-left: 0;
+    }
+    div.mobile-menu {
+        display: block;
+    }
 }

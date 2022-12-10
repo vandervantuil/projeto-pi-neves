@@ -1,0 +1,118 @@
+
+div.slider {
+    margin: 0;
+    width: 50vw;
+    overflow: hidden;
+    border: 10px solid #1D9000;
+    border-radius: 5%;
+    background-color: #1D9000;
+}
+
+div.slides {
+    width: 400%;
+    display: flex;
+}
+
+div.slides input {
+    display: none;
+}
+div.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+div.slide img {
+    width: 50vw;
+}
+
+div.manual-navigation {
+    position: absolute;
+    width: 50vw;
+    margin-top: -2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+label.manual-btn {
+    border: 2px solid #fff;
+    padding: 0.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+label.manual-btn:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+label.manual-btn:hover {
+    background-color: #fff;
+}
+
+div.navigation-auto div{
+    border: 2px solid #a206ff;
+    padding: 0.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+div.navigation-auto{
+    position: absolute;
+    width: 50vw;
+    margin-top: 31.5vw;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+div.navigation-auto div:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+.active-1, .active-2, .active-3 {
+    background-color: #fff;
+}
+
+
+/* Passar Slides */
+
+#radio1:checked ~ .first1 {
+    margin-left: 0;
+}
+#radio2:checked ~ .first1 {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first1 {
+    margin-left: -50%;
+}
+#radio4:checked ~ .first1 {
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .second {
+    margin-left: 0;
+}
+#radio6:checked ~ .second {
+    margin-left: -25%;
+}
+#radio7:checked ~ .second {
+    margin-left: -50%;
+}
+#radio8:checked ~ .second {
+    margin-left: -75%;
+}
+
+#radio9:checked ~ .third {
+    margin-left: 0;
+}
+#radio10:checked ~ .third {
+    margin-left: -25%;
+}
+#radio11:checked ~ .third {
+    margin-left: -50%;
+}
+#radio12:checked ~ .third {
+    margin-left: -75%;
+}
