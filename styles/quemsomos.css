@@ -1,0 +1,28 @@
+.conteudo p{
+    font-size: 1.30rem;
+    padding-top: 50px;
+    border: 5px black;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+.conteudo h1 {
+    font-size: 4rem;
+    padding-bottom: 50px;
+    border-bottom: 5px solid #000;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-top: 48px;
+
+}
+
+.conteudo img{
+    width: 50vw;
+    border: 10px solid #1D9000;
+    border-radius: 5%;
+}
